@@ -1,41 +1,57 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Soft shadow -->
-  <ellipse cx="105" cy="185" rx="55" ry="8" fill="rgba(0,0,0,0.1)" />
-  
-  <!-- Flower petals - overlapping circles -->
-  <circle cx="100" cy="70" r="25" fill="url(#bloomiPetal1)" />
-  <circle cx="130" cy="90" r="25" fill="url(#bloomiPetal2)" />
-  <circle cx="130" cy="130" r="25" fill="url(#bloomiPetal3)" />
-  <circle cx="100" cy="150" r="25" fill="url(#bloomiPetal4)" />
-  <circle cx="70" cy="130" r="25" fill="url(#bloomiPetal5)" />
-  <circle cx="70" cy="90" r="25" fill="url(#bloomiPetal6)" />
-  
-  <!-- Center body - round and cheerful -->
+  <!-- Grupo das pétalas com rotação -->
+  <g transform="rotate(0 100 110)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      from="0 100 110" 
+      to="360 100 110" 
+      dur="10s" 
+      repeatCount="indefinite" />
+    <circle cx="100" cy="70" r="25" fill="url(#bloomiPetal1)" />
+    <circle cx="130" cy="90" r="25" fill="url(#bloomiPetal2)" />
+    <circle cx="130" cy="130" r="25" fill="url(#bloomiPetal3)" />
+    <circle cx="100" cy="150" r="25" fill="url(#bloomiPetal4)" />
+    <circle cx="70" cy="130" r="25" fill="url(#bloomiPetal5)" />
+    <circle cx="70" cy="90" r="25" fill="url(#bloomiPetal6)" />
+  </g>
+
+  <!-- Grupo das partículas giratórias -->
+  <g transform="rotate(0 100 110)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      from="0 100 110" 
+      to="-360 100 110" 
+      dur="20s" 
+      repeatCount="indefinite" />
+    <circle cx="60" cy="80" r="2" fill="url(#bloomiPollen)" opacity="0.8" />
+    <circle cx="140" cy="85" r="1.5" fill="url(#bloomiPollen)" opacity="0.6" />
+    <circle cx="55" cy="140" r="1" fill="url(#bloomiPollen)" opacity="0.7" />
+    <circle cx="145" cy="135" r="2" fill="url(#bloomiPollen)" opacity="0.5" />
+    <circle cx="75" cy="60" r="1.5" fill="url(#bloomiPollen)" opacity="0.9" />
+  </g>
+
+  <!-- Centro da flor -->
   <circle cx="100" cy="110" r="35" fill="url(#bloomiCenter)" />
   <circle cx="100" cy="110" r="28" fill="url(#bloomiCenterHighlight)" opacity="0.6" />
-  
-  <!-- Happy eyes -->
+
+  <!-- Olhos -->
   <circle cx="88" cy="105" r="8" fill="white" />
   <circle cx="112" cy="105" r="8" fill="white" />
   <circle cx="88" cy="105" r="5" fill="#1f2937" />
   <circle cx="112" cy="105" r="5" fill="#1f2937" />
   <circle cx="90" cy="103" r="2" fill="white" />
   <circle cx="114" cy="103" r="2" fill="white" />
-  
-  <!-- Sweet smile -->
+
+  <!-- Sorriso -->
   <path d="M 90 120 Q 100 128 110 120" stroke="#1f2937" stroke-width="3" fill="none" stroke-linecap="round" />
-  
-  <!-- Rosy cheeks -->
+
+  <!-- Bochechas -->
   <circle cx="70" cy="115" r="8" fill="url(#bloomiBlush)" opacity="0.6" />
   <circle cx="130" cy="115" r="8" fill="url(#bloomiBlush)" opacity="0.6" />
-  
-  <!-- Floating pollen particles -->
-  <circle cx="60" cy="80" r="2" fill="url(#bloomiPollen)" opacity="0.8" />
-  <circle cx="140" cy="85" r="1.5" fill="url(#bloomiPollen)" opacity="0.6" />
-  <circle cx="55" cy="140" r="1" fill="url(#bloomiPollen)" opacity="0.7" />
-  <circle cx="145" cy="135" r="2" fill="url(#bloomiPollen)" opacity="0.5" />
-  <circle cx="75" cy="60" r="1.5" fill="url(#bloomiPollen)" opacity="0.9" />
-  
+
+  <!-- Gradientes -->
   <defs>
     <radialGradient id="bloomiPetal1" cx="0.3" cy="0.3">
       <stop offset="0%" stop-color="#fef3c7" />

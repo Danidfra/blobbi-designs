@@ -1,7 +1,4 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Elegant shadow -->
-  <ellipse cx="105" cy="185" rx="45" ry="8" fill="rgba(0,0,0,0.12)" />
-  
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">  
   <!-- Rose stem -->
   <rect x="98" y="120" width="4" height="50" fill="url(#roseyStem)" rx="2" />
   

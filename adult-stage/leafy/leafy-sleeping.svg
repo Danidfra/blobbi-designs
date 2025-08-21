@@ -57,10 +57,8 @@
     <circle cx="125" cy="50" r="1" fill="url(#leafyPollen)" opacity="0.5" />
   </g>
 
-  <!-- "Zzz" sleeping -->
-  <text x="150" y="60" font-size="10" fill="#666" opacity="0.8">Z</text>
-  <text x="157" y="55" font-size="8" fill="#666" opacity="0.6">z</text>
-  <text x="162" y="51" font-size="6" fill="#666" opacity="0.4">z</text>
+  
+ 
   
   <defs>
     <radialGradient id="leafyStem" cx="0.3" cy="0.2">
